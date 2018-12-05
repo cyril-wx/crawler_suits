@@ -1,8 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding:UTF-8 -*-
 
+
+if False:
+	import os
+	cmd1 = "export http_proxy=http://F3200278:Foxconn%402016@10.191.131.43:3128 ;"
+	cmd2 = "export https_proxy=http://F3200278:Foxconn%402016@10.191.131.43:3128 ;"
+	cmd3 = " sudo pip3 install bs4 ;"
+	cmd4 = " sudo pip3 install requests ;"
+	cmd5 = " sudo pip3 install requests_ntlm ;"
+	cmd = cmd1+cmd2+cmd3+cmd4+cmd5
+	os.system(cmd)
+
 from bs4 import BeautifulSoup
-from crawler_agent import getEISPHTML
+from crawler_eisp_agent import getEISPHTML
 
 def parse_PunchTime_HTML():
 	"""
@@ -180,6 +191,7 @@ def calcuTimeInterval(startTime, endTime):
 	
 
 if __name__ == "__main__":
+
 	getEISPHTML('F1235027','Cyril201811')
 	#getEISPHTML('F1228225','Adpbg4a4')
 	#getEISPHTML('F1233396', "Zf201811")
