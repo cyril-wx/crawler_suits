@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-driver = webdriver.PhantomJS(executable_path='/Users/cyril/Desktop/Coding/Python/phantomjs-2.1.1-macosx/bin/phantomjs')
+driver = webdriver.PhantomJS(executable_path='/Users/cyril/Public/phantomjs-2.1.1-macosx/bin/phantomjs')
 driver.set_page_load_timeout(30)
 
 # Baidu
